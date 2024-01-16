@@ -15,6 +15,9 @@ npm install express
 npm install dotenv
 Set up dotenv to manage environment variables.
 
+### creating api documaetaion swaggers
+swaggers doucmentation tool i used .
+
 ### Connecting Server
 
 Configure and set up  Express server.
