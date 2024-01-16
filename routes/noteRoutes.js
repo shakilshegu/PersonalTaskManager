@@ -42,7 +42,7 @@ export default router
  *               title: Sample Note
  *               content: This is the content of the note.
  *     responses:
- *       201:
+ *       200:
  *         description: Note created successfully
  *         content:
  *           application/json:

@@ -42,7 +42,7 @@ export default router
  *               email: john@example.com
  *               password: password123
  *     responses:
- *       201:
+ *       200:
  *         description: User created successfully
  *         content:
  *           application/json:
