@@ -13,8 +13,13 @@ const options = {
      info: {
        title: 'Personal Task Manager',
        version: '1.0.0',
-       description: 'Description of your API',
+       description: 'This Personal Task Management ',
      },
+     server:[
+      {
+         url:"http://localhost:3001/"
+      }
+     ]
    },
    apis: ['./routes/userRoutes.js', './routes/taskRoutes.js', './routes/noteRoutes.js'],
  };

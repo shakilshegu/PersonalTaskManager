@@ -24,6 +24,8 @@ export default router
  * /api/user/signup:
  *   post:
  *     summary: Create a new user
+ *     tags:
+ *       - Users
  *     requestBody:
  *       required: true
  *       content:
@@ -55,6 +57,8 @@ export default router
  * /api/user/login:
  *   post:
  *     summary: User login
+ *     tags:
+ *       - Users
  *     requestBody:
  *       required: true
  *       content:
