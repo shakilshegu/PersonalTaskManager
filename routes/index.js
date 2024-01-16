@@ -1,6 +1,6 @@
 import { Router} from "express"
 import userRoutes from "./userRoutes.js"
-import postRoutes from "./postRoutes.js"
+import taskRoutes from "./taskRoutes.js"
 import noteRoutes from "./noteRoutes.js"
 
 const router = Router()
@@ -9,7 +9,7 @@ const router = Router()
 router.use("/api/user",userRoutes)
 
 //* For Post Routes
-router.use("/api/task",postRoutes)
+router.use("/api/task",taskRoutes)
 
 //* For Note Routes
 router.use("/api/note",noteRoutes)

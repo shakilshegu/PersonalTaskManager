@@ -7,7 +7,7 @@ const router = Router()
 router.post("/",authMiddleware,addTask)
 router.get("/showtask",authMiddleware,showTask)
 router.put("/update/:id", authMiddleware, updateTask);
-router.delete("/:id",authMiddleware,deleteTask)
+router.delete("/delete:id",authMiddleware,deleteTask)
 
 
 
