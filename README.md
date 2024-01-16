@@ -24,7 +24,7 @@ npm install @prisma/client
 Configure Prisma for database interactions.
 
 ### Create a Database
-Set up your database (e.g., PostgreSQL, MySQL) and define data models.
+Set up  database  PostgreSQL and define data models.
 
 #### Connecting Database and Set Environment
 Connect your Prisma client to the database and set up environment variables.
