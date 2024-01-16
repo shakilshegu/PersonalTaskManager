@@ -5,6 +5,7 @@ import noteRoutes from "./noteRoutes.js"
 
 const router = Router()
 
+
 //* User Routes
 router.use("/api/user",userRoutes)
 

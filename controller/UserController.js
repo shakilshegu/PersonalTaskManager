@@ -57,7 +57,4 @@ export const loginUser = async (req, res) => {
   }
 };
 
-//* checking jwt authmiddileware working
-export const me = async (req, res) => {
-  res.json(req.user);
-};
+
