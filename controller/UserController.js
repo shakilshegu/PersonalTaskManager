@@ -1,7 +1,7 @@
 import prisma from "../db/dbconfig.js";
 import jwt from "jsonwebtoken"
 
-
+//* Create User
 export const createUser = async (req, res) => {
   const { username, email, password } = req.body;
   const findUser = await prisma.user.findUnique({
@@ -25,6 +25,7 @@ export const createUser = async (req, res) => {
   return res.json({ status: 200, data: newUser, message: "User created." });
 };
 
+//* Login User
 export const loginUser = async (req, res) => {
   const { email, password } = req.body;
   const user = await prisma.user.findUnique({
@@ -44,6 +45,7 @@ export const loginUser = async (req, res) => {
   res.json({user,token});
 };
 
+//* checking jwt authmiddileware working
 export const me = async (req,res)=>{
   res.json(req.user)
 }
