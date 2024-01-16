@@ -12,7 +12,6 @@ router.put("/updatenote/:noteId", authMiddleware, updateNotes);
 
 
 export default router
-
 /**
  * @swagger
  * tags:
@@ -25,6 +24,8 @@ export default router
  * /api/note/createnote:
  *   post:
  *     summary: Create a new note
+ *     tags:
+ *       - Notes
  *     security:
  *       - bearerAuth: []
  *     requestBody:
@@ -55,6 +56,8 @@ export default router
  * /api/note/shownotes:
  *   get:
  *     summary: Get all notes
+ *     tags:
+ *       - Notes
  *     security:
  *       - bearerAuth: []
  *     responses:
@@ -71,6 +74,8 @@ export default router
  * /api/note/deletenote/{noteId}:
  *   delete:
  *     summary: Delete a note by ID
+ *     tags:
+ *       - Notes
  *     security:
  *       - bearerAuth: []
  *     parameters:
@@ -94,6 +99,8 @@ export default router
  * /api/note/updatenote/{noteId}:
  *   put:
  *     summary: Update a note by ID
+ *     tags:
+ *       - Notes
  *     security:
  *       - bearerAuth: []
  *     parameters:

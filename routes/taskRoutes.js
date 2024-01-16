@@ -26,6 +26,8 @@ export default router
  *     summary: Create a new task
  *     security:
  *       - bearerAuth: []
+ *     tags:
+ *       - Tasks
  *     requestBody:
  *       required: true
  *       content:
@@ -53,6 +55,8 @@ export default router
  *     summary: Get all tasks
  *     security:
  *       - bearerAuth: []
+ *     tags:
+ *       - Tasks
  *     responses:
  *       200:
  *         description: Successful response
@@ -69,6 +73,8 @@ export default router
  *     summary: Update a task by ID
  *     security:
  *       - bearerAuth: []
+ *     tags:
+ *       - Tasks
  *     parameters:
  *       - in: path
  *         name: id
@@ -103,6 +109,8 @@ export default router
  *     summary: Delete a task by ID
  *     security:
  *       - bearerAuth: []
+ *     tags:
+ *       - Tasks
  *     parameters:
  *       - in: path
  *         name: id
@@ -118,3 +126,4 @@ export default router
  *             example:
  *               message: Task deleted successfully
  */
+
