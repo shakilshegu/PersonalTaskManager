@@ -1,5 +1,6 @@
 import "dotenv/config"
 import express from "express";
+import cors from "cors";  
 const app = express();
 import swaggerUi from 'swagger-ui-express';
 import swaggerJsdoc from 'swagger-jsdoc';
@@ -29,6 +30,11 @@ const options = {
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 
 // * middleware
+app.use(cors({
+  origin: 'http://localhost:3001', 
+methods: ['GET', 'POST','PUT','PATCH','DELETE'], // Allow specific HTTP methods
+credentials: true, // Allow cookies and authentication headers
+}));
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
