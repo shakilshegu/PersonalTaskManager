@@ -17,7 +17,7 @@ const options = {
      },
      server:[
       {
-         url:"http://localhost:3001/"
+         url:"https://personaltaskmanager.onrender.com/"
       }
      ]
    },

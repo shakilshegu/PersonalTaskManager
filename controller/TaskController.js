@@ -3,7 +3,6 @@ import prisma from "../db/dbconfig.js";
 //* create a new task
 export const addTask = async (req, res) => {
   try {
-    
     const { title, description, dueDate, status } = req.body;
     const userId = req.user.id;
     if (!title || !description || !dueDate || !status) {
