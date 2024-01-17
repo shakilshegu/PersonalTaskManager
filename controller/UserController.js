@@ -27,6 +27,7 @@ export const createUser = async (req, res) => {
       .status(200)
       .json({ success: true, data: newUser, message: "User created." });
   } catch (error) {
+    console.log(error.message)
     res.status(500).json({ success: false, message: "Something went wrong" });
   }
 };
