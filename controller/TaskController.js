@@ -40,6 +40,8 @@ export const showTask = async (req, res) => {
     });
    if(tasks){
     return res.status(200).json({success:true,message:"Successfully feched data"})
+   }else{
+    return res.status(500).json({ success: false, message: "Internal server error" });
    } 
   } catch (error) {
     res.status(500).json({ success: false, message: "Internal Server Error" });
