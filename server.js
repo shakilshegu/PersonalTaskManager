@@ -16,6 +16,15 @@ const options = {
        version: '1.0.0',
        description: 'This Personal Task Management ',
      },
+     components: {
+      securitySchemes: {
+        bearerAuth: {
+          type: 'http',
+          scheme: 'bearer',
+          bearerFormat: 'JWT',
+        },
+      },
+    },
      server:[
       {
          url:"https://personaltaskmanager.onrender.com/"
