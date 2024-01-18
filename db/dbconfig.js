@@ -10,4 +10,12 @@ const prisma = new PrismaClient({
     },
 });
 
+prisma.$connect()
+  .then(() => {
+    console.log('Connected to PostgreSQL database');
+  })
+  .catch((error) => {
+    console.error('Error connecting to PostgreSQL database', error);
+  });
+
 export default prisma;
