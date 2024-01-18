@@ -25,6 +25,7 @@ const options = {
         },
       },
     },
+    security: [{ bearerAuth: [] }],
      server:[
       {
          url:"https://personaltaskmanager.onrender.com/"
