@@ -23,9 +23,11 @@ export const createUser = async (req, res) => {
         password: password,
       },
     });
-    return res
-      .status(200)
-      .json({ success: true, data: newUser, message: "User created." });
+    if(newUser){
+      return res
+        .status(200)
+        .json({ success: true, data: newUser, message: "User created." });
+    }
   } catch (error) {
     res.send(error.message)
     res.status(500).json({ success: false, message: "Something went wrong" });
