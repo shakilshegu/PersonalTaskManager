@@ -53,7 +53,7 @@ app.use(express.urlencoded({extended:false}))
 
 
 app.get("/",(req,res)=>{
-   return res.send("hello world");
+   return res.send("hi guyees");
 })
 
 // * Routes fils
